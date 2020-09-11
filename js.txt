@@ -1,0 +1,22 @@
+let content="";document.querySelectorAll(".reader-word-layer").forEach(x=>content+=x.innerText);content;
+
+
+
+
+
+
+let topDiff = -1;
+let content = "";
+const target = document.querySelectorAll(".reader-word-layer"); 
+target.forEach(x => {
+    if (x.style.top !== topDiff) {
+        content += "n";
+        topDiff = x.style.top;
+    };
+    content += x.innerText;
+});
+content;
+
+
+
+document.body.innerText
